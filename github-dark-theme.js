@@ -14,9 +14,10 @@ var synCss = `
 	--color-canvas-default: #010409 !important;
     --color-canvas-subtle: #010409 !important;
     --color-accent-fg: #fff !important;
-    --color-accent-emphasis: transparent !important;
     --color-canvas-subtle: #030712 !important;
     --color-timeline-badge-bg: #1d4ed8 !important;
+    --color-accent-emphasis: #d946ef !important;
+    --color-success-emphasis: #4ade80 !important;
 `
 
 var head = document.getElementsByTagName('head')[0]
