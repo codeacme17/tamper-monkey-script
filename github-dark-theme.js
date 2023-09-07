@@ -8,21 +8,21 @@
 // @require      https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js
 // ==/UserScript==
 
-var synCss = `
+const SYN_CSS = `
 :root {
 	--border-primary: #5c5c5c;
 	--color-canvas-default: #010409 !important;
-    --color-canvas-subtle: #010409 !important;
-    --color-accent-fg: #fff !important;
-    --color-canvas-subtle: #030712 !important;
-    --color-timeline-badge-bg: #1d4ed8 !important;
-    --color-accent-emphasis: #d946ef !important;
-    --color-success-emphasis: #4ade80 !important;
+	--color-canvas-subtle: #010409 !important;
+	--color-accent-fg: #bfdbfe !important;
+	--color-canvas-subtle: #030712 !important;
+	--color-timeline-badge-bg: #1d4ed8 !important;
+	--color-accent-emphasis: #d946ef !important;
+	--color-success-emphasis: #4ade80 !important;
 `
-
-var head = document.getElementsByTagName('head')[0]
-var stylesheet = document.createElement('style')
+const head = document.getElementsByTagName('head')[0]
+const stylesheet = document.createElement('style')
 stylesheet.type = 'text/css'
-stylesheet.innerText = synCss
-stylesheet.className = 'synCss'
+stylesheet.innerText = SYN_CSS
+stylesheet.className = 'SYN_CSS'
 head.appendChild(stylesheet)
+
